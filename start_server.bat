@@ -1,8 +1,12 @@
 @echo off
 color F5
-call ./config/prepare.bat
+
+
+REM call ./config/prepare.bat
+
+set php_path=C:\Users\%USERNAME%\progs\php7.3.11\php.exe
 
 echo "phppath est :"
-echo "Lancement du serveur de developpement :  %php_path%"
+REM echo "Lancement du serveur de developpement :  %php_path%"
+REM %php_path% -S localhost:8082
 
-%php_path% -S localhost:8082
